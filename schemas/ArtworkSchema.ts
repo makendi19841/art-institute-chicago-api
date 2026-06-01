@@ -2,6 +2,16 @@ import { z } from "zod";
 
 export const STORAGE_KEY = 'gallery_artworks';
 
+export const NOTES_KEY = 'gallery_notes';
+
+export const NoteSchema = z.object({
+  artworkId: z.number().int().nonnegative(),
+  text: z.string().trim().min(1, 'Note cannot be empty').max(300, 'Note too long than 300 chars'),
+  updateAt: z.string().datetime().optional(),
+})
+
+export type Note = z.infer<typeof NoteSchema>;
+
 // Shapes returned by the Art Institute of Chicago API
 // https://api.artic.edu/api/v1/artworks
 //
