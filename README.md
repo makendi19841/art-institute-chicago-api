@@ -9,8 +9,6 @@
 This project practises integrating a third-party API, validating data with Zod, and building a dynamic user interface with React and TypeScript.
 
 - **API:** [Art Institute of Chicago Public API](https://api.artic.edu/docs/)
-- **Duration:** 2 days (Full Time) / 5 days (Part Time)
-- **Presentation:** Mandatory — date TBD by Instructor
 
 ---
 
